@@ -1,0 +1,51 @@
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none
+    }
+
+    .header {
+
+        &::after {
+            background-image: url(../assets/mobile-background.png);
+        }
+
+        &__animation-stars {
+            background-image: url(../assets/mobile-stars.png);
+        }
+    
+        &__animation-sparks {
+            background-image: url(../assets/mobile-sparks.png);
+        }
+
+        &__mobile-menu {
+            display: inline;
+        }
+    }
+
+    .main {
+        text-align: left;
+
+        &__title {
+            padding-left: 20px;
+        }
+
+        &__subtitle {
+            padding-left: 20px;
+        }
+
+        &__article {
+            display: block;
+            padding-left: 20px;
+        }
+    }
+
+    .footer {
+        display: block;
+        text-align: center;
+    }
+
+    .btn--read-more {
+        margin: 20px;
+    }
+}

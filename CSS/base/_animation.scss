@@ -1,0 +1,52 @@
+@keyframes backgroundStars {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes backgroundSparks {
+    0% {
+        transform-origin: center right;
+        transform: scale(1);
+    }     
+    50% {
+        transform-origin: center right;
+        transform: scale(1.05);
+    }
+    100% {
+        transform-origin: center right;
+        transform: scale(1);
+    } 
+}
+
+.header__logo {
+    transform: rotateY(0deg) scale(1);
+    transition: all .5s ease;
+    transform-origin: bottom;
+
+    &:hover {
+        transform: rotateY(180deg) scale(1.8);
+    }
+}
+
+.btn--read-more {
+    transform: rotate(0deg);
+    transition: all 1s ease-out;
+    transform-origin: top left;
+
+    &:hover {
+        transform: rotate(15deg);
+    }
+}
+
+.btn--video {
+    transform: perspective(600px) translateZ(0px);
+    transition: all .5s linear;
+
+    &:hover {
+        transform: perspective(600px) translateZ(-30px);
+        background-color: $color-white;
+        color: $color-highlight-primary;
+    }
+}
+

@@ -1,0 +1,25 @@
+
+.aside {
+    color: $color-white;
+    background-image: linear-gradient(
+        to bottom,
+        rgba($color-black, 0),
+        rgba($color-black, 0.6)),
+        url(../assets/aside-background.png);
+    @include settings-background(top right, cover, no-repeat);
+    min-height: 80vh;
+    text-align: center;
+
+    &__info {
+        padding: 2rem 0;
+    }
+
+    &__title {
+        font-family: $title-font-family;
+        @include text-styles($title-font-weight, $title-font-size, $title-line-height);
+    }
+    
+    &__subtitle {
+        @include text-styles($subtitle-font-weight, $subtitle-font-size, $subtitle-line-height);
+    }
+}

@@ -1,0 +1,35 @@
+
+.main {
+    color: $color-grey-medium;
+    background-color: $color-grey-light;
+    position: relative;
+    min-height: 80vh;
+    text-align: center;
+
+    &__section {
+        padding: 2rem 0;
+    }
+
+    &__title {
+        font-family: $title-font-family;
+        @include text-styles($title-font-weight, $title-font-size, $title-line-height);
+    }
+    
+    &__subtitle {
+        @include text-styles($subtitle-font-weight, $subtitle-font-size, $subtitle-line-height);
+    }
+    
+    &__article {
+        color: $color-black;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: space-around;
+        gap: 50px;
+        @include text-styles(400, 16px, 22px);
+    }
+    
+    &__text {
+        flex: 1;
+        text-align: left;
+    }
+}

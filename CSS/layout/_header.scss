@@ -1,0 +1,102 @@
+
+.header {
+    color: $color-white;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+
+    &::after {
+        content: "";
+        background-color: $color-grey-darker;
+        @include settings-background(top right, cover, no-repeat);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -3;
+    }
+    
+    &__mobile-menu {
+        width: 20px;
+        height: 20px;
+        padding-right: 3rem;
+        align-self: center;
+        display: none;
+    }
+    
+    &__top-menu {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__sitename {
+        color: $color-white;
+        @include text-styles(600, 20px, 16px);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        text-decoration: none;
+
+            &--hovered:hover {
+            border-bottom: 1px solid;
+        }
+    }
+
+    &__info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    &__title {
+        font-family: $title-font-family;
+        @include text-styles($title-font-weight, $title-font-size, $title-line-height);
+    }
+
+    &__subtitle {
+        color: rgba($color-white, 0.7);
+        @include text-styles($subtitle-font-weight, $subtitle-font-size, $subtitle-line-height);
+    }
+
+    &__animation-stars {
+        @include settings-background(top right, cover, no-repeat);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -2;
+        animation: backgroundStars 5s ease-out infinite;
+
+    }
+
+    &__animation-sparks {
+        @include settings-background(top right, cover, no-repeat);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        animation: backgroundSparks 5s infinite;
+    }
+
+    @media screen and (min-width: 768px) {
+        &::after {
+            background-image: url(../assets/header-background.png);
+        }
+    
+        &__animation-stars {
+            background-image: url(../assets/desktop-stars.png);
+        }
+    
+        &__animation-sparks {
+            background-image: url(../assets/desktop-sparks.png);
+        }
+    }
+}
+
+

@@ -1,0 +1,27 @@
+
+.navbar {
+    flex: 1;
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include text-styles(400, 14px, 16px);
+        letter-spacing: 0.2em;
+        list-style-type: none;
+        text-transform: uppercase;
+    }
+
+    &__item {
+        margin: 0 20px;
+    }
+
+    &__link {
+        color: $color-white;
+        text-decoration: none;
+
+        &:hover {
+            border-bottom: 1px solid;
+        }        
+    }
+}

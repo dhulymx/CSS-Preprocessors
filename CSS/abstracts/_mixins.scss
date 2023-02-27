@@ -1,0 +1,11 @@
+@mixin text-styles($weight, $size, $height) {
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;    
+}
+
+@mixin settings-background($position, $size, $repeat) {
+    background-position: top right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

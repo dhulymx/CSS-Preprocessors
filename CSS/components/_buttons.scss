@@ -1,0 +1,25 @@
+.btn--read-more {
+    color: $color-white;
+    background-color: $color-highlight-secondary;
+    margin-top: 20px;
+    border-radius: 18px;
+    border-style: hidden;
+    padding: 6px 18px;
+    font-family: 'Oswald';
+    font-size: 14px;  
+    letter-spacing: 0.1em; 
+    line-height: 26px;
+    text-transform: uppercase;
+}
+
+
+.btn--video {
+    color: $color-white;
+    background-color: $color-highlight-primary;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border-style: hidden;
+    padding: 10px 20px;
+    font-size: 4em;
+}
